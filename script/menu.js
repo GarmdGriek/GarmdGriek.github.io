@@ -61,7 +61,7 @@ function menu() {
         var menuMainId = ["header-nav"]; //ids being used on site
         var menuItems =[headerText]; //array in array for titles and links
         var menuLinks =[headerLink]; //array in array for titles and links
-
+        
         for (let mainIndex = 0; mainIndex < menuItems.length; mainIndex++) {
             var title=menuItems[mainIndex];
             var link=menuLinks[mainIndex];
