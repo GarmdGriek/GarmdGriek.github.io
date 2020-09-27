@@ -1,4 +1,16 @@
 function mobilemenu() {
+    var cssId = 'myCss';  // you could encode the css path itself to generate id..
+    if (!document.getElementById(cssId))
+        {
+        var head  = document.getElementsByTagName('head')[0];
+        var link  = document.createElement('link');
+        link.id   = cssId;
+        link.rel  = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/stylesheet/mobile.css';
+        link.media = 'all';
+        head.appendChild(link);
+    }
     var menuMainId = ["juli-list","august-list","september-list","presence-list","uds-list","concept-list","interest-list"]
     var menuItemsUL =["menu-july","menu-august","menu-september","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"]
     var menuHeading =["July","August","September","My Presence", "Unstructured Data",  "Concepts", "Interests"]

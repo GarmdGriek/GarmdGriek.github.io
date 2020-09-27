@@ -2,6 +2,18 @@ function menu() {
     //windows size test
     var w = window.innerWidth;
     if (w>1000){
+        var cssId = 'myCss';  // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId))
+            {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = cssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '/stylesheet/blog.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
         var menuMainId = ["September-list","August-list","juli-list","presence-list","uds-list","concept-list","interest-list"]
         var menuItemsUL =["menu-september","menu-august","menu-juli","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"]
         var menuHeading =["September","August","July","My Presence", "Unstructured Data", "Concepts", "Interests"]
@@ -56,12 +68,23 @@ function menu() {
         }
 
     } else {
+        var cssId = 'myCss';  // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId))
+            {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = cssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '/stylesheet/mobile.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
         var headerText =["menu","Enquiries"]; //Header titles and links
         var headerLink=["<a href=/mobile/mobile-menu.html>","<a href=mailto:nicolai.imset+website@gmail.com?subject=Enquiry target=\"_blank\">"]; //Header titles and links
         var menuMainId = ["header-nav"]; //ids being used on site
         var menuItems =[headerText]; //array in array for titles and links
         var menuLinks =[headerLink]; //array in array for titles and links
-        
         for (let mainIndex = 0; mainIndex < menuItems.length; mainIndex++) {
             var title=menuItems[mainIndex];
             var link=menuLinks[mainIndex];
@@ -77,5 +100,6 @@ function menu() {
             }   
                 
         }
+
     }
 };
