@@ -11,9 +11,9 @@ function mobilemenu() {
         link.media = 'all';
         head.appendChild(link);
     }
-    var menuMainId = ["juli-list","august-list","september-list","presence-list","uds-list","concept-list","interest-list"]
-    var menuItemsUL =["menu-july","menu-august","menu-september","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"]
-    var menuHeading =["July","August","September","My Presence", "Unstructured Data",  "Concepts", "Interests"]
+    var menuMainId = ["juli-list","august-list","september-list","october-list","presence-list","uds-list","concept-list","interest-list"]
+    var menuItemsUL =["menu-july","menu-august","menu-september","menu-october","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"]
+    var menuHeading =["July","August","September","October","My Presence", "Unstructured Data",  "Concepts", "Interests"]
     for (let i = 0; i < menuMainId.length; i++) {
         var mainId = document.getElementById("menu-left");
         var mainList = document.createElement("li");
@@ -36,6 +36,8 @@ function mobilemenu() {
     var menuAugustLink=["<a href=/blogpost/20200813-back-to-work.html>"]; //blog titles and links
     var menuSeptember=["2. A month and a Tesla", "17. Moving to Github"]; //blog titles and links
     var menuSeptemberLink=["<a href=/blogpost/20200902-a-month-and-a-tesla.html>","<a href=/blogpost/20200917-moving-to-github.html>"]; //blog titles and links
+    var menuOctober=["22. Honest Appreciation"];
+    var menuOctoberLink=["<a href=/blogpost/20201022-honest-appreciation.html>"];
     var menuPresenceText =["Twitter", "LinkedIn","Facebook","StackOverflow","FreeCodeCamp.org"]; //Social presence titles and links
     var menuPresenceLink=["<a href=https://twitter.com/NicolaiImset target=\"_blank\">", "<a href=https://www.linkedin.com/in/nicolaiimset/ target=\"_blank\">","<a href=https://www.facebook.com/nicolai.imset target=\"_blank\">","<a href=https://stackoverflow.com/users/13789221/nicolai-imset target=\"_blank\">","<a href=https://www.freecodecamp.org/fccd7f7b8c8-3869-4fe1-b908-d364e64f59e3 target=\"_blank\">"]; //Social presence titles and links
     var menuUnstructuredText =["06.Juli 2020 Dell+Cloudera","PowerScale","ECS","DataIQ","Streaming"]; //dell UDS titles and links
@@ -45,8 +47,8 @@ function mobilemenu() {
     var menuInterestsText =["Family History","Electric Vehicles","Folding @home - Covid19","Gmail hacks"]; //Hobbies and interests title and links
     var menuInterestsLink=["<a href=https://www.myheritage.no/site-69479721/imset target=\"_blank\">","<a href=https://www.lelandwest.com/history-of-the-electric-vehicle.cfm#:~:text=One%20known%20electric%20motor%20was,used%20to%20drive%20a%20carriage. target=\"_blank\">","<a href=https://stats.foldingathome.org/donor/GarmdGriek target=\"_blank\">","<a href=https://smallbusiness.chron.com/gmail-email-address-tricks-41619.html target=\"_blank\">"]; //Hobbies and interests title and links
     var menuMainId = ["header-nav","menu-july","menu-august","menu-september","menu-presence","menu-unstructured","menu-Dell","menu-Concepts","menu-Interests"]; //ids being used on site
-    var menuItems =[headerText,menuJuly,menuAugust,menuSeptember,menuPresenceText,menuUnstructuredText,menuConceptsText,menuInterestsText]; //array in array for titles and links
-    var menuLinks =[headerLink,menuJulyLink,menuAugustLink,menuSeptemberLink,menuPresenceLink,menuUnstructuredLink,menuConceptsLink,menuInterestsLink]; //array in array for titles and links
+    var menuItems =[headerText,menuJuly,menuAugust,menuSeptember,menuOctober,menuPresenceText,menuUnstructuredText,menuConceptsText,menuInterestsText]; //array in array for titles and links
+    var menuLinks =[headerLink,menuJulyLink,menuAugustLink,menuSeptemberLink,menuOctoberLink,menuPresenceLink,menuUnstructuredLink,menuConceptsLink,menuInterestsLink]; //array in array for titles and links
 
     for (let mainIndex = 0; mainIndex < menuItems.length; mainIndex++) {
         var title=menuItems[mainIndex];
