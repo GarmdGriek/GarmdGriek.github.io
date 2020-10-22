@@ -11,9 +11,9 @@ function mobilemenu() {
         link.media = 'all';
         head.appendChild(link);
     }
-    var menuMainId = ["juli-list","august-list","september-list","october-list","presence-list","uds-list","concept-list","interest-list"]
-    var menuItemsUL =["menu-july","menu-august","menu-september","menu-october","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"]
-    var menuHeading =["July","August","September","October","My Presence", "Unstructured Data",  "Concepts", "Interests"]
+    var menuMainId = ["juli-list","august-list","september-list","october-list","presence-list","uds-list","concept-list","interest-list"];
+    var menuItemsUL =["menu-july","menu-august","menu-september","menu-october","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"];
+    var menuHeading =["July","August","September","October","My Presence","Unstructured Data","Concepts","Interests"];
     for (let i = 0; i < menuMainId.length; i++) {
         var mainId = document.getElementById("menu-left");
         var mainList = document.createElement("li");
@@ -46,7 +46,7 @@ function mobilemenu() {
     var menuConceptsLink=["<a href=/blogpost/20200703-website-plans.html>"]; //Ideas and plans titles and links
     var menuInterestsText =["Family History","Electric Vehicles","Folding @home - Covid19","Gmail hacks"]; //Hobbies and interests title and links
     var menuInterestsLink=["<a href=https://www.myheritage.no/site-69479721/imset target=\"_blank\">","<a href=https://www.lelandwest.com/history-of-the-electric-vehicle.cfm#:~:text=One%20known%20electric%20motor%20was,used%20to%20drive%20a%20carriage. target=\"_blank\">","<a href=https://stats.foldingathome.org/donor/GarmdGriek target=\"_blank\">","<a href=https://smallbusiness.chron.com/gmail-email-address-tricks-41619.html target=\"_blank\">"]; //Hobbies and interests title and links
-    var menuMainId = ["header-nav","menu-july","menu-august","menu-september","menu-presence","menu-unstructured","menu-Dell","menu-Concepts","menu-Interests"]; //ids being used on site
+    var menuMainId = ["header-nav","menu-july","menu-august","menu-september","menu-october","menu-presence","menu-unstructured","menu-Dell","menu-Concepts","menu-Interests"]; //ids being used on site
     var menuItems =[headerText,menuJuly,menuAugust,menuSeptember,menuOctober,menuPresenceText,menuUnstructuredText,menuConceptsText,menuInterestsText]; //array in array for titles and links
     var menuLinks =[headerLink,menuJulyLink,menuAugustLink,menuSeptemberLink,menuOctoberLink,menuPresenceLink,menuUnstructuredLink,menuConceptsLink,menuInterestsLink]; //array in array for titles and links
 
