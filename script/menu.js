@@ -50,8 +50,8 @@ function menu() {
         var menuInterestsText =["Family History","Electric Vehicles","Folding @home - Covid19","Gmail hacks"]; //Hobbies and interests title and links
         var menuInterestsLink=["<a href=https://www.myheritage.no/site-69479721/imset target=\"_blank\">","<a href=https://www.lelandwest.com/history-of-the-electric-vehicle.cfm#:~:text=One%20known%20electric%20motor%20was,used%20to%20drive%20a%20carriage. target=\"_blank\">","<a href=https://stats.foldingathome.org/donor/GarmdGriek target=\"_blank\">","<a href=https://smallbusiness.chron.com/gmail-email-address-tricks-41619.html target=\"_blank\">"]; //Hobbies and interests title and links
         var menuMainId = ["header-nav","menu-october","menu-september","menu-august","menu-juli","menu-presence","menu-unstructured","menu-Concepts","menu-Interests"]; //ids being used on site
-        var menuItems =[headerText,menuJuly,menuAugust,menuSeptember,menuOctober,menuPresenceText,menuUnstructuredText,menuConceptsText,menuInterestsText]; //array in array for titles and links
-        var menuLinks =[headerLink,menuJulyLink,menuAugustLink,menuSeptemberLink,menuOctoberLink,menuPresenceLink,menuUnstructuredLink,menuConceptsLink,menuInterestsLink]; //array in array for titles and links
+        var menuItems =[headerText,menuOctober,menuSeptember,menuAugust,menuJuly,menuPresenceText,menuUnstructuredText,menuConceptsText,menuInterestsText]; //array in array for titles and links
+        var menuLinks =[headerLink,menuOctoberLink,menuSeptemberLink,menuAugustLink,menuJulyLink,menuPresenceLink,menuUnstructuredLink,menuConceptsLink,menuInterestsLink]; //array in array for titles and links
     
         for (let mainIndex = 0; mainIndex < menuItems.length; mainIndex++) {
             var title=menuItems[mainIndex];
